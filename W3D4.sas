@@ -154,3 +154,25 @@ quit;
 
 %loop_channels;
 
+/* %do %while // %do %until 조건반복 */
+%macro countdown;
+	%let n=5;
+	%do %while (&n > 0);
+	%put count &n;
+	%let n=%eval(&n-1);
+	%end;
+	%put shooooot!!!!!;
+%mend countdown;
+%countdown
+
+%macro countdown_until;
+	%let n=5;
+	%do %until (&n = 0);
+	%put count &n;
+	%let n=%eval(&n-1);
+	%end;
+	%put shooooot!!!!!;
+%mend countdown_until;
+%countdown_until;
+
+test
