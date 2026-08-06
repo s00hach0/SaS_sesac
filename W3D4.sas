@@ -174,5 +174,3 @@ quit;
 	%put shooooot!!!!!;
 %mend countdown_until;
 %countdown_until;
-
-test
