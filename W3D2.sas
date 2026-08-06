@@ -381,3 +381,4 @@ DATA work.users_d;
 		signup_day signup_wkday signup_qtr;
 RUN;
 
+/*하기싫다 */
