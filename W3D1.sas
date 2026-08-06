@@ -1,4 +1,5 @@
 libname shop "/home/student/shop_db";
+
 proc import datafile='/home/student/shop_csv/orders_dirty.csv'
 	out=shop.orders_dirty
 	dbms=csv
